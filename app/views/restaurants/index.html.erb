@@ -1,0 +1,36 @@
+<%= form_for :restaurant, url: restaurants_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p> 
+
+  <p> 
+    <%= f.label :description %><br>
+    <%= f.text_area :description %> 
+  </p>
+
+  <p>
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </p>
+
+  <p>
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </p>
+
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %> 
+  </p>
+
+  <p>
+    <%= f.submit 'Add Restaurant', :class => 'stripe-button' %>
+  </p>
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A month's subscription"
+          data-amount="500"></script>
+<% end %>
+
+

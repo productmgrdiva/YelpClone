@@ -1,0 +1,94 @@
+// Place all the styles related to the homepage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+span.stars, span.stars span {
+    display: block;
+    background: url(stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
+}
+
+a.functions {
+  font-size:12px;
+}
+
+a.signing { 
+  margin-left:400px;
+}
+
+a.add-rest {
+  margin-left:10px;
+}
+
+div.wrapper {
+  /*background-color: black;*/
+  width:350px;
+  border-style:solid;
+  border-width: 1px;
+  border-color: black;
+  margin-top:10px;
+  border-radius: 4px;
+  background-color: white;
+  opacity:0.8;
+  padding:2px;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar a:link    {color:white;}
+.navbar a:visited {color:white;}
+.navbar a:hover   {color:blue;}
+
+a:link {color:black;}
+a:visited {color:#380000 ;}
+a:hover   {color:blue;}
+a:active  {color:yellow;}
+
+.navbar-brand {
+  color:#F0F0F0;
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+.update-delete {
+  font-size:10px;
+}
+
+div#map-canvas {
+  height:200px;
+  width:200px;
+  float:right;
+  display:inline-block;
+}
+
+body {
+  background:  no-repeat 0 100%;
+  background-color: white;
+}
+
+/*img.header-image {
+  width:100%;
+  height:100px;
+}*/
+
+div.google-maps {
+  float:right;
+}
+
+div.wrapper-restaurant {
+  border-bottom:1px dotted black;
+}
+
+button {
+  margin-left:20px;
+}
+
+button.stripe-button-el {
+  display:none;
+}
